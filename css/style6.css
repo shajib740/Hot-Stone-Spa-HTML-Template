@@ -1,0 +1,825 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header,hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Theme Style*/
+
+/**Section Planning
+*
+*
+**/
+
+
+
+.container
+{
+    max-width: 1110px;
+    
+}
+
+
+/*Navbar*/
+.navbar {
+    margin-bottom: 0px;
+}
+
+.header-top, .header-top a {
+    background: #4b2641;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #7d406c;
+    text-decoration: none;
+}
+
+.nav-background {
+    background: #7d406c;
+    border: none;
+}
+
+.logo-top {
+    margin-top: 3px;
+    z-index: 2;
+    position: relative;
+    padding: 0 0 0 25px;
+
+}
+
+.main-nav-wrapper ul li {
+    padding: 10px 10px 1px 20px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a {
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 3px solid transparent;
+    transition: all 500ms;
+    line-height: 25px;
+    color: #d5cec2;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active {
+    color: #f39d89;
+    background: transparent !important;
+    border-bottom: 3px solid #fff;
+}
+
+.submenu .dropdown-menu {
+    min-width: 132px;
+    background: #69365b;
+}
+
+.submenu .dropdown-menu li a {
+    background: transparent;
+
+}
+
+.submenu ul > li > a:hover,
+.submenu ul > li > a:focus {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.submenu ul li a {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 500;
+    color: #f39d89;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.dropdown-large ul li {
+    font-family: 'Heebo', sans-serif;
+
+}
+
+.dropdown-large {
+    position: static !important;
+}
+
+.dropdown-menu-large {
+    background: #69365b;
+    width: 71%;
+    margin-left: 254px;
+    margin-right: 36px;
+    padding: 30px 10px 20px 0;
+}
+
+.dropdown-menu-large > li > ul > li {
+    padding: 3px;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+.dropdown-title {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 500;
+    color: #f39d89;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.dropdown-menu-large > li > ul > li > a {
+    display: block;
+    padding: 3px 3px 3px 0;
+    clear: both;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.428571429;
+    color: #f39d89;
+    white-space: normal;
+    text-transform: uppercase;
+}
+
+.drop-image-title > a {
+    color: #f39d89;
+    text-decoration: none;
+}
+
+.drop-image-title {
+    background: #3e2036;
+    margin-bottom: 4px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #f39d89;
+    text-transform: uppercase;
+}
+
+.dropdown-menu-large > li ul > li > a:hover,
+.dropdown-menu-large > li ul > li > a:focus {
+    text-decoration: none;
+    color: #fff;
+
+}
+.dropdown-image{
+    padding-top: 7px;
+}
+
+.drop-image-title a:hover {
+    color: #fff;
+}
+
+.dropdown-menu-large .col1{
+    padding-left: 45px;
+}
+
+.dropdown-menu-large .col2{
+    padding-left: 105px;
+}
+
+@media (max-width: 768px) {
+    .dropdown-menu-large {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .dropdown-menu-large > li {
+        margin-bottom: 30px;
+    }
+
+    .dropdown-menu-large > li:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+/*Override Bootstrap Default Style*/
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;
+    }
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    color: #f39d89;
+    background: transparent !important;
+    border-bottom: 3px solid #fff;
+}
+
+
+/*slider*/
+.ps-creative-title{
+    font-family: 'Satisfy', cursive;
+    font-size: 45px;
+    line-height: 100px;
+}
+
+.border-bottom-none,.border-bottom-none:hover{
+    border-bottom: none !important;
+}
+
+.ps-hr{
+    display: inline-block;
+    height: 2px;
+    width: 100px;
+    margin:14px;
+    background: #fff;
+}
+
+.ps-slider-wrap{
+    padding: 100px 0;
+}
+
+.carousel-inner{
+    display: block;
+    z-index: 2;
+}
+
+
+.ps-slider-header{
+    color: #fff;
+}
+
+.ps-slider-title{
+    font-size: 120px;
+    font-family: 'Arima Madurai', cursive;
+}
+
+/*indicator*/
+
+.carousel-indicators li.active{
+    background: white;
+    color: white;
+    border:8px solid white;
+}
+
+.carousel-indicators li{
+    background-color: #fff;
+}
+
+.ps-indicator-position{
+    bottom: -80px;
+
+}
+/*//end-Global*/
+
+
+/*header-image(small)*/
+
+#spa-small-slider{
+    padding: 50px 0px;
+}
+
+/*<!--06 - Contact-->*/
+.ps-contact-slider{
+    position: relative;
+    background: url("../img/contact.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.ps-contact-slider:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cbcec8+0,ddddd7+0,bac0c4+0,615a57+100 */
+    background: rgb(203,206,200); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(203,206,200,1) 0%, rgba(221,221,215,1) 0%, rgba(186,192,196,1) 0%, rgba(97,90,87,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(203,206,200,1) 0%,rgba(221,221,215,1) 0%,rgba(186,192,196,1) 0%,rgba(97,90,87,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(203,206,200,1) 0%,rgba(221,221,215,1) 0%,rgba(186,192,196,1) 0%,rgba(97,90,87,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbcec8', endColorstr='#615a57',GradientType=0 ); /* IE6-9 */
+}
+/*<!--//06 - Contact-->*/
+
+/*Reservation type*/
+/*global class for reservation*/
+
+.ps-assistant-bold-font{
+    font-family: 'Assistant', sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+
+.ps-reservation-header{
+    padding: 70px 0 70px 0;
+}
+
+.ps-reservation-title {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+.ps-reservation-subtitle{
+    font-family: 'Arima Madurai', cursive;
+    font-size: 60px;
+    color: #663366;
+}
+
+
+
+/*reservation type1*/
+/*for title and form font color*/
+.ps-reserve-color{
+    color:#ff9999;
+}
+
+
+/*for form alignment*/
+.ps-reservation-form{
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+
+/*for form placeholder style*/
+.ps-reservation-type-1 input::-webkit-input-placeholder {
+    color: #ff9999 !important;
+    
+}
+
+
+.ps-reservation-type-1 input::-moz-placeholder {
+    color: #ff9999 !important;
+
+}
+
+.ps-reservation-type-1 input:-ms-input-placeholder  {
+    color: #ff9999 !important;
+
+}
+
+.ps-reservation-type-1 input:-moz-placeholder {
+    color: #ff9999 !important;
+
+}
+
+
+
+.ps-reservation-type-1 textarea::-webkit-input-placeholder {
+    color: #ff9999 !important;
+
+}
+
+
+.ps-reservation-type-1 textarea::-moz-placeholder {
+    color: #ff9999 !important;
+
+}
+
+.ps-reservation-type-1 textarea:-ms-input-placeholder  {
+    color: #ff9999 !important;
+
+}
+
+.ps-reservation-type-1 textarea:-moz-placeholder {
+    color: #ff9999 !important;
+
+}
+
+
+/*for button*/
+.ps-reservation-type-1 .btn{
+    background:#ff9999;
+    color: #ffffcc;
+    font-family: 'Assistant', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*contact*/
+.ps-contact-info{
+    color:#333333;
+}
+
+.ps-contact-info p{
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.ps-contact-info h4{
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+
+.ps-contact-details{
+    padding-top: 45px;
+}
+.ps-reservation-type-1 .p6{
+    background: url("../img/booking-section-background-p6.jpg") no-repeat;
+    background-size: cover;
+}
+
+.ps-reservation-type-1 .p6 .container{
+
+    background-color: #ffcccc;
+    padding-bottom: 62px;
+
+}
+
+/*Free consultantion full*/
+/*-----global class-----*/
+.ps-global-heading{
+    font-family: 'Arima Madurai', cursive;
+    font-size:40px;
+}
+
+.ps-global-text{
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    color: #293d31;
+}
+/*----Free Consultation----*/
+
+.ps-consultation {
+    background: url("../img/consultation-bg.png") no-repeat;
+    padding: 60px 0 30px 0;
+}
+.ps-consultation h2{
+    margin: 0;
+}
+.ps-consultation h1{
+    padding: 30px 0 40px 0;
+    margin: 0;
+}
+
+.ps-consultation form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #293d31 !important;
+}
+
+.ps-consultation form textarea::-webkit-input-placeholder{
+    color: #293d31 !important;
+}
+
+.ps-consultation form input[placeholder], textarea[placeholder]{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
+}
+
+.ps-consultation form .form-control {
+    border:none;
+    border-radius:0px;
+}
+
+.ps-consultation form .btn {
+
+    background-color: #293d31;
+    font-family: 'Assistant', sans-serif;
+    font-size: 12px;
+    color:#fff;
+    width:140px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+
+
+.ps-sub-heading {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+}
+
+.ps-heading {
+    font-weight: 200;
+}
+
+.ps-consultation .input-group-addon{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0 0 2px #fff;
+}
+
+.icon-position {
+    padding-right: 0;
+}
+
+.form-control-email{
+    padding-left: 4px;
+}
+
+/*Free consultation end*/
+
+/*Team main*/
+.ps-team-connect-title{
+    font-family: 'Satisfy', cursive,sans-serif;
+    font-size: 30px;
+    color: #f39d89;
+    padding-top: 37px;
+}
+.ps-team-connect-section-title{
+    font-family: 'Arima Madurai', cursive,sans-serif;
+    font-size: 60px;
+    color: #7d406c;
+    padding-top: 43px;
+    padding-bottom: 93px;
+}
+.ps-team-connect-social-icon{
+    font-size: 45px;
+    color: #f39d89;
+    padding-bottom: 64px;
+    padding-right: 40px;
+    padding-left: 30px;
+}
+/**connect**/
+.ps-connect-section{
+    background-color:#f7dbcb ;
+}
+
+/**team**/
+.ps-team-section{
+    background: url("../img/team-flower.png") no-repeat;
+    background-size: cover;
+}
+.ps-team-section ul .ps-team-connect-social-icon{
+    font-size: 12px;
+    color: #ffffff;
+    padding-right: 0;
+    padding-left: 0;
+}
+.ps-member-wrap{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ps-member-image{
+    border: 3px;
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 50%;
+}
+.ps-member-name{
+    font-family: 'Arima Madurai', cursive,sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    padding-bottom: 20px;
+    padding-top: 48px;
+
+}
+.ps-member-description{
+    font-family: 'Assistant', sans-serif;
+    color: #ffffff;
+    padding-bottom: 43px;
+
+}
+.ps-member-border{
+    border-right:4px solid #624542;
+    height: 275px;
+
+}
+
+
+/* start subscribe to our newsletter*/
+
+
+
+.ps-subscribe h2{
+    font-size: 30px;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.ps-subscribe{
+    background-image: url("../img/Section Bounds.jpg");
+    padding-top:66px;
+    padding-bottom:75px;
+}
+.ps-sub-header{
+
+    font-family: 'Satisfy', cursive;
+    color:#7d406c;
+    margin-left: 15px;
+}
+
+
+#ps-exampleInputEmail3{
+    width:235px;
+    height:40px;
+}
+
+.ps-button{
+    background-color:#7d406c;
+    margin-left: -5px;
+    border-radius:0px;
+    color:#cec2ba;
+    font-weight:bold;
+    width:160px;
+    height:40px;
+}
+
+.ps-button:hover{
+    background-color:#4d194d;
+    color:#cec2ba;
+}
+.ps-form{
+    margin-top:15px;
+}
+
+
+input::-webkit-input-placeholder {
+    color: #f5b7a5 !important;
+    font-weight: bold;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: #f5b7a5 !important;
+    font-weight: bold;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: #f5b7a5 !important;
+    font-weight: bold;
+}
+
+input:-ms-input-placeholder {
+    color: #f5b7a5 !important;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 738px) {
+
+    .ps-form{
+        margin-top:25px;
+    }
+
+    .ps-button{
+        margin-left: 1px;
+        margin-top: -10px;
+    }
+}
+
+
+/*end of subscribe to our newsletter*/
+
+/*footer*/
+.ps-footer-bg {
+    background-color: #572d4b;
+}
+
+.ps-footer-row {
+    padding-top: 55px;
+    color: #dcdfc9;
+    font-family: 'Assistant', sans-serif;
+    padding-bottom: 60px;
+}
+
+.ps-footer-logo {
+    top: -13px;
+    padding-left: 35px;
+}
+
+.ps-footer-welcome {
+    padding-left: 52px;
+}
+
+.ps-footer-welcome-heading {
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 200;
+    font-size: 24pt;
+    margin-bottom: 10px;
+    padding-left: 2px;
+}
+
+.ps-footer-welcome-content {
+    font-family: 'Assistant', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    padding-left: 20px;
+    width: 208px;
+
+}
+
+.ps-footer-contact {
+    font-size: 12px;
+    line-height: 20px;
+
+}
+
+.ps-footer-address {
+    line-height: 20px;
+    font-size: 12px;
+
+}
+
+.ps-footer-social {
+    font-size: 10px;
+    line-height: 20px;
+
+}
+
+.ps-footer-li-heading {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.ps-footer-social-icon {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.ps-footer-social-icon li a {
+    color: #dcdfc9;
+}
+
+.ps-footer-social-icon li a:hover, .ps-footer-social-icon li a:active, .ps-footer-social-icon li a:focus {
+    color: #b05797;
+
+}
+
+/*footer media quari*/
+
+/* Back-to-top-functionality */
+
+.go-top {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 30px;
+    position: fixed;
+    bottom: -40px;
+    right: 90px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    background-color: #b05797;
+    color: #e8add7;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.go-top.show {
+    bottom: 20px;
+}
+
+.go-top:hover {
+    background-color: #5DBA9D;
+    color: #FFFFFF;
+}
+
+/*end of footer*/

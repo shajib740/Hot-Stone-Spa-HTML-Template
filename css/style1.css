@@ -1,0 +1,1449 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*sequence of css classes
+01 - Home Expanded Navigation
+02 - Home Alternate
+03 - About
+04 - Therapies
+05 - Classes
+06 - Contact
+07 - Shop Home Left Sidebar
+08 - Shop Home Left Sidebar Alternate
+09 - Shop Home Right Sidebar
+10 - Shop Home Right Sidebar Alternate
+11 - Shop Home No Sidebar
+12 - Shop Home No Sidebar Alternate
+13 - Shop Product Page
+14 - Shop Product Page Alternate
+end-sequence of css classes*/
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+.container{
+    width:1110px;
+}
+/*NAVBAR*/
+
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.header-top, .header-top a {
+    background: #4b2641;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #7d406c;
+    text-decoration: none;
+}
+
+.nav-background {
+    background: #7d406c;
+    border: none;
+}
+
+.logo-top {
+    margin-top: 3px;
+    z-index: 2;
+    position: relative;
+    padding: 0 0 0 25px;
+
+}
+
+.main-nav-wrapper ul li {
+    padding: 10px 10px 1px 20px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a {
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 3px solid transparent;
+    transition: all 500ms;
+    line-height: 25px;
+    color: #d5cec2;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active {
+    color: #f39d89;
+    background: transparent !important;
+    border-bottom: 3px solid #fff;
+}
+
+.submenu .dropdown-menu {
+    min-width: 132px;
+    background: #69365b;
+}
+
+.submenu .dropdown-menu li a {
+    background: transparent;
+
+}
+
+.submenu ul > li > a:hover,
+.submenu ul > li > a:focus {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.submenu ul li a {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 500;
+    color: #f39d89;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.dropdown-large ul li {
+    font-family: 'Heebo', sans-serif;
+
+}
+
+.dropdown-large {
+    position: static !important;
+}
+
+.dropdown-menu-large {
+    background: #69365b;
+    width: 71%;
+    margin-left: 254px;
+    margin-right: 36px;
+    padding: 30px 10px 20px 0;
+}
+
+.dropdown-menu-large > li > ul > li {
+    padding: 3px;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+.dropdown-title {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 500;
+    color: #f39d89;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.dropdown-menu-large > li > ul > li > a {
+    display: block;
+    padding: 3px 3px 3px 0;
+    clear: both;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.428571429;
+    color: #f39d89;
+    white-space: normal;
+    text-transform: uppercase;
+}
+
+.drop-image-title > a {
+    color: #f39d89;
+    text-decoration: none;
+}
+
+.drop-image-title {
+    background: #3e2036;
+    margin-bottom: 4px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #f39d89;
+    text-transform: uppercase;
+}
+
+.dropdown-menu-large > li ul > li > a:hover,
+.dropdown-menu-large > li ul > li > a:focus {
+    text-decoration: none;
+    color: #fff;
+
+}
+.dropdown-image{
+    padding-top: 7px;
+}
+
+.drop-image-title a:hover {
+    color: #fff;
+}
+
+.dropdown-menu-large .col1{
+    padding-left: 45px;
+}
+
+.dropdown-menu-large .col2{
+    padding-left: 105px;
+}
+
+@media (max-width: 768px) {
+    .dropdown-menu-large {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .dropdown-menu-large > li {
+        margin-bottom: 30px;
+    }
+
+    .dropdown-menu-large > li:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+/*Override Bootstrap Default Style*/
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;
+    }
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    color: #f39d89;
+    background: transparent !important;
+    border-bottom: 3px solid #fff;
+}
+/*----navbar ends----*/
+
+
+
+/*----slider start----*/
+/*Body*/
+body{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Global Class*/
+.container{
+    max-width: 1110px;
+}
+.ps-creative-title{
+    font-family: 'Satisfy', cursive;
+    font-size: 45px;
+    line-height: 100px;
+}
+
+.border-bottom-none,.border-bottom-none:hover{
+    border-bottom: none !important;
+}
+
+.ps-hr{
+    display: inline-block;
+    height: 2px;
+    width: 100px;
+    margin:14px;
+    background: #fff;
+}
+
+.ps-slider-wrap{
+    padding: 100px 0;
+}
+
+.carousel-inner{
+    display: block;
+    z-index: 2;
+}
+
+
+.ps-slider-header{
+    color: #fff;
+}
+
+.ps-slider-title{
+    font-size: 120px;
+    font-family: 'Arima Madurai', cursive;
+}
+
+/*indicator*/
+
+.carousel-indicators li.active{
+    background: white;
+    color: white;
+    border:8px solid white;
+}
+
+.carousel-indicators li{
+    background-color: #fff;
+}
+
+.ps-indicator-position{
+    bottom: -80px;
+
+}
+/*//end-Global*/
+
+
+/*header-image(small)*/
+
+#spa-small-slider{
+    padding: 50px 0px;
+}
+
+
+/*<!--01 - Home Expanded Navigation-->*/
+
+/*Slider*/
+
+.ps-home-slider{
+    position: relative;
+    background: url("../img/slider.jpg") no-repeat;
+    background-size: cover;
+}
+
+.ps-home-slider:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cbcec8+0,ddddd7+0,bac0c4+0,615a57+100 */
+    background: rgb(203,206,200); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(203,206,200,1) 0%, rgba(221,221,215,1) 0%, rgba(186,192,196,1) 0%, rgba(97,90,87,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(203,206,200,1) 0%,rgba(221,221,215,1) 0%,rgba(186,192,196,1) 0%,rgba(97,90,87,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(203,206,200,1) 0%,rgba(221,221,215,1) 0%,rgba(186,192,196,1) 0%,rgba(97,90,87,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbcec8', endColorstr='#615a57',GradientType=0 ); /* IE6-9 */
+}
+
+#ps-spa-slider{
+    padding: 150px 0;
+}
+/*----slider ends----*/
+
+
+
+
+/*------Welcome------*/
+
+/*-----global class-----*/
+.ps-global-heading{
+    font-family: 'Arima Madurai', cursive;
+    font-size:40px;
+}
+
+.ps-global-text{
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    color: #293d31;
+}
+
+
+.ps-welcome{
+    background: url("../img/welcome-bg.jpg") no-repeat;
+    background-origin: border-box;
+    background-position: 70% 50%;
+    padding: 20px 0;
+}
+
+.ps-welcome a:link{
+    text-decoration: none;
+    color: #8e597e;
+}
+
+.ps-welcome h1 {
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+
+.ps-welcome p {
+    line-height: 30px;
+}
+
+.ps-welcome-card{
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 16px 24px;
+    -webkit-box-shadow: 0px 0px 32px 4px rgba(224,224,224,1);
+    -moz-box-shadow: 0px 0px 32px 4px rgba(224,224,224,1);
+    box-shadow: 0px 0px 32px 4px rgba(224,224,224,1);
+}
+
+.ps-welcome-card p{
+    line-height: 48px;
+}
+
+.ps-welcome-time p{
+    color: #8e597e;
+}
+/*welcome section end */
+
+/*--price start*/
+.container{
+    max-width: 1110px;
+}
+.ps-main-body{
+
+}
+.main-wrapper{
+    padding-top: 50px;
+}
+
+.ps-deals{
+    background: url(../img/deals_background.png)  no-repeat center center;
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 80px;
+}
+.ps-deals-body{
+    /*padding-left: 8%;
+    padding-right: 8%;*/
+}
+.ps-deals-heading{
+    font-size: 45px;
+    font-family: 'Satisfy';
+    color: #7d406c;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 26px;
+}
+.ps-deals-bound{
+    border-radius: 4px;
+    background-color:#ffffff;
+    padding-bottom: 35px;
+}
+div.ps-deals-bound:hover{
+    transform: scale(1.1);
+
+}
+
+.ps-deals-boundhead{
+    font-size: 30px;
+    font-family: 'Arima Madurai';
+    color: #7d406c;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 70px;
+}
+.ps-deals-boundtext {
+    font-size: 24px;
+    font-family: 'Assistant';
+    color: #7d406c;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.ps-deals-boundprice{
+    font-size: 48px;
+    font-family: 'Arima Madurai';
+    color: #7d406c;
+    text-align: center;
+    padding-top: 43px;
+}
+.ps-deals-pricetag {
+    font-size: 30px;
+}
+.ps-deals-pricetag2 {
+    bottom: -5px;
+}
+.ps-deals-boundbutton {
+    font-size: 30px;
+    font-family: 'Arima Madura';
+    color: #f7dbcb;
+    background-color: #7d406c;
+    text-align: center;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 68px;
+    margin-bottom: 4px;
+}
+/*----price ends---*/
+
+
+
+/*Events & Classes start*/
+
+.ps-events {
+    background-image: url("../img/events.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ps-events-top h3 {
+    padding:64px 0 45px 60px;
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    color: rgb(108, 134, 100);
+    line-height: 3;
+}
+
+.ps-events-top h1 {
+    width: 100%;
+    color: rgb(41, 61, 49);
+    padding-right: 30%;
+    line-height: 1.3;
+    padding-bottom: 20px;
+}
+
+.ps-events-top p {
+    color: rgb(41, 61, 49);
+    line-height: 1.3em;
+    padding-right: 20%;
+    padding-bottom: 90px;
+    padding-top: 20px;
+}
+
+
+.ps-events-bottom h2 {
+    font-family: 'Arima Madurai', cursive;
+    padding-bottom: 35px;
+    font-size: 30px;
+}
+
+
+.ps-events-bottom{
+    padding-bottom: 40px;
+    padding-right: 22%;
+    padding-top: 20px;
+}
+
+.ps-events-bottom button{
+    font-family: 'Arima Madurai', cursive;
+    background: #10502a;
+    color: #fcfff1;
+    padding: 10px 16px 8px 16px;
+}
+
+.ps-events-bottom button:hover {
+    background-color: #293d31;
+    color: #fcfff1;
+    font-family: 'Arima Madurai', cursive;
+}
+
+.ps-events-bottom h2{
+    margin:0;
+    font-size: 50px;
+    padding-bottom:40px;
+    font-weight:700;
+    position: relative;
+
+}
+
+/*------price tag------*/
+.ps-events-bottom h2 span:nth-child(1) {
+    font-size: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+
+.ps-events-bottom h2 span:nth-child(2) {
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left:10px;
+}
+
+
+.ps-events-bottom h2 span:nth-child(3) {
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left:36px;
+}
+.ps-events-bottom h2 span:nth-child(4) {
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left:62px;
+}
+.ps-events-bottom h2 span:nth-child(5) {
+    font-size: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left:94px;
+}/*------price tag ends------*/
+/*Events & Classes end*/
+
+
+/*---service starts---*/
+.ps-services-wrap{
+    background-color: #fad7ca;
+    background-image: url(../img/main-background.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ps-services-header h3{
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 28px;
+    color: #a67288;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.ps-services-title{
+    text-align: center;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 50px;
+    color: #d8674d;
+}
+
+/* Start services first section*/
+.ps-content{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.ps-yoga-header{
+    background-color: white;
+    text-align: center;
+}
+.yoga-icon{
+    height: 85px;
+    width: 110px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.ps-yoga-title{
+    color: #7d406c;
+    font-family: 'Arima Madurai', "ExtraBold";
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.ps-yoga-description{
+    color: #7d406c;
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 90px;
+
+}
+.ps-yoga-footer{
+    background-color: #f39d89;
+    height: 25px;
+}
+
+/* our services 2nd page design */
+.ps-services-wrap2{
+    background-color: #f7c8ad;
+}
+/*----service ends----*/
+
+
+
+
+/*-------Our reviews start-------*/
+
+/*Global Class*/
+.container{
+    max-width: 1110px;
+}
+
+
+.carousel-inner{
+    display: block;
+    z-index: 2;
+}
+.ps-review-slider{
+    position: relative;
+    background-color: #6a355a;
+    background-size: cover;
+}
+
+
+.ps-review-title {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    color: #f39d89;
+    padding-top: 40px;
+}
+.ps-review-sub-title{
+    padding-top: 25px;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 45px;
+    color: #f7dbcb;
+}
+
+.ps-review-content-title{
+    padding-top: 10px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 5px;
+    color: #f7dbcb;
+}
+
+.ps-review-content{
+    line-height: 26px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    padding-bottom: 5px;
+    color: #f7dbcb;
+
+}
+
+.ps-review-company{
+    padding-top: 23px;
+    padding-bottom: 83px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+.ps-review-img{
+    padding-top: 65px;
+}
+.ps-review-img-edit{
+    border: 3px solid #f28d84;
+    border-radius: 50%;
+}
+.ps-review-detail{
+    margin-left: 18%;
+    margin-right: 18%;
+    color: #f6c4be;
+    font-style: italic;
+
+}
+
+
+/*indicator*/
+
+.ps-review-indicator li.active{
+    background: white;
+    color: white;
+    border:8px solid white;
+}
+
+.ps-review-indicator li{
+    background-color: #fff;
+}
+
+.ps-review-indicator{
+    bottom: 40px;
+}
+.ps-review-indicator li{
+    height: 8px;
+    width: 8px;
+}
+.ps-review-indicator li.active{
+    border: 6px solid white;
+}
+
+
+
+/*-------Our reviews end--------*/
+
+
+
+/*Reservation starts*/
+/*global class for reservation*/
+
+.ps-assistant-bold-font{
+    font-family: 'Assistant', sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+
+.ps-reservation-header{
+    padding: 70px 0 70px 0;
+}
+
+.ps-reservation-title {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+.ps-reservation-subtitle{
+    font-family: 'Arima Madurai', cursive;
+    font-size: 60px;
+    color: #663366;
+}
+
+/*reservation type1*/
+/*for title and form font color*/
+.ps-reserve-color{
+    color:#ff9999;
+}
+
+
+/*for form alignment*/
+.ps-reservation-form{
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+
+/*for form placeholder style*/
+.ps-reservation-type-1 input::-webkit-input-placeholder {
+    color: #ff9999 !important;
+
+}
+
+
+.ps-reservation-type-1 input::-moz-placeholder {
+    color: #ff9999 !important;
+
+}
+
+.ps-reservation-type-1 input:-ms-input-placeholder  {
+    color: #ff9999 !important;
+
+}
+
+.ps-reservation-type-1 input:-moz-placeholder {
+    color: #ff9999 !important;
+
+}
+
+
+
+.ps-reservation-type-1 textarea::-webkit-input-placeholder {
+    color: #ff9999 !important;
+
+}
+
+
+.ps-reservation-type-1 textarea::-moz-placeholder {
+    color: #ff9999 !important;
+
+}
+
+.ps-reservation-type-1 textarea:-ms-input-placeholder  {
+    color: #ff9999 !important;
+
+}
+
+.ps-reservation-type-1 textarea:-moz-placeholder {
+    color: #ff9999 !important;
+
+}
+
+
+/*for button*/
+.ps-reservation-type-1 .btn{
+    background:#ff9999;
+    color: #ffffcc;
+    font-family: 'Assistant', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*contact*/
+.ps-contact-info{
+    color:#333333;
+}
+
+.ps-contact-info p{
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.ps-contact-info h4{
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+
+.ps-contact-details{
+    padding-top: 45px;
+}
+
+
+/*page*/
+.ps-reservation-type-1 .p1 {
+    background: url("../img/booking-section-background-p1.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+.ps-reservation-type-1 .p1 .container{
+
+    background-color: #ffcccc;
+    padding-bottom: 62px;
+
+}
+
+
+
+/*reservation ends*/
+
+/*--blog start--*/
+
+/*starting  "ps-blog" part :*/
+
+.ps-blog .ps-blog-h2{
+    font-size:30px;
+    font-family: 'Satisfy', cursive;
+    text-transform:capitalize;
+    color:#293d31;
+    padding-top:37px;
+    padding-bottom:35px;
+}
+
+.ps-blog .ps-latest-news-h1{
+    font-size:60px;
+    font-family: 'Arima Madurai', cursive;
+    text-transform:capitalize;
+    color:#293d31;
+    padding-bottom:60px;
+}
+
+
+.ps-paragraph-part1,.ps-paragraph-part2{
+
+    padding-top:15px;
+    padding-bottom:24px;
+    padding-left:14px;
+    padding-right:35px;
+}
+.ps-author-date{
+    margin-top:15px;
+}
+
+.ps-image-part1,.ps-image-part2{
+    background-color: white;
+    padding-left: 0px;
+}
+
+.ps-paragraph-part1 h3, .ps-paragraph-part2 h3{
+
+    font-size: 20px;
+    color: rgb(41, 61, 49);
+    font-weight: bold;
+    line-height: 1.5;
+    font-family: 'Assistant', sans-serif;
+    text-transform:capitalize;
+
+}
+
+.ps-paragraph-part1 p, .ps-paragraph-part2 p{
+
+    color: rgb(41, 61, 49);
+    line-height: 2.143;
+    font-size:14px;
+    font-family: 'Assistant', sans-serif;
+}
+
+/*span of "p.ps-author-date"
+*/
+
+.ps-img-round{
+    margin-right:6px;
+}
+.ps-author{
+    margin-right:23px;
+}
+/*ending span of "p.ps-author-date"
+*/
+
+
+/*absoluting image and link*/
+.ps-relative{
+    position: relative;
+}
+.ps-absolute a{
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+}
+/*end of absoluting image and link*/
+
+/*link a style*/
+.ps-read-more-a{
+    background:#7d406c;
+    color:#c0a4b8;
+    padding-left:12px;
+    padding-right:12px;
+    padding-top:6px;
+    padding-bottom:6px;
+    text-decoration:none;
+}
+
+.ps-read-more-a:hover{
+    background:#602060;
+    color:#c0a4b8;
+    text-decoration: none !important
+
+}
+/* end of link a style*/
+
+@media only screen and (max-width: 991px) {
+
+
+    .ps-relative{
+        position: relative;
+    }
+
+    .ps-absolute a{
+        position: absolute;
+        bottom: 5%;
+        right: 35%;
+    }
+
+    .ps-media-query{
+        padding:30px;
+    }
+    .ps-paragraph-part1,.ps-paragraph-part2{
+        width:74%;
+    }
+}
+
+@media only screen and (max-width: 738px) {
+
+    .ps-relative{
+        position: relative;
+    }
+
+    .ps-absolute a{
+        position: absolute;
+        bottom: 5%;
+        right: 28%;
+    }
+
+    .ps-paragraph-part1,.ps-paragraph-part2{
+        width:74%;
+    }
+}
+
+@media only screen and (max-width: 609px) {
+
+    .ps-relative{
+        position: relative;
+    }
+
+    .ps-absolute a{
+        position: absolute;
+        bottom: 5%;
+        right: 8%;
+    }
+
+    .ps-paragraph-part1,.ps-paragraph-part2{
+        width:92%;
+    }
+}
+
+/*end of "ps-blog" part  */
+
+
+/* start subscribe to our newsletter*/
+
+.ps-subscribe{
+    background-image: url("../img/Section Bounds.jpg");
+    padding-top:66px;
+    padding-bottom:75px;
+}
+.ps-sub-header{
+
+    font-family: 'Satisfy', cursive;
+    color:#7d406c;
+    margin-left: 15px;
+    padding-top: 22px;
+    font-size: 27px;
+}
+
+
+#ps-exampleInputEmail3{
+    width:235px;
+    height:40px;
+}
+
+.ps-button{
+    background-color:#7d406c;
+    margin-left: -5px;
+    border-radius:0px;
+    color:#cec2ba;
+    font-weight:bold;
+    width:160px;
+    height:40px;
+}
+
+.ps-button:hover{
+    background-color:#4d194d;
+    color:#cec2ba;
+}
+.ps-form{
+    margin-top:15px;
+}
+
+
+input::-webkit-input-placeholder {
+    color: #f5b7a5 !important;
+    font-weight: bold;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: #f5b7a5 !important;
+    font-weight: bold;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: #f5b7a5 !important;
+    font-weight: bold;
+}
+
+input:-ms-input-placeholder {
+    color: #f5b7a5 !important;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 738px) {
+
+    .ps-form{
+        margin-top:25px;
+    }
+
+    .ps-button{
+        margin-left: 1px;
+        margin-top: -10px;
+    }
+}
+
+.ps-bg-color{
+    background-color: #ebf1d7;
+}
+.ps-padding{
+    padding-bottom: 90px;
+}
+
+/* view more */
+.ps-view-more{
+    padding: 22px;
+    background-color: #bdcbb9;
+}
+
+/*end of subscribe to our newsletter*/
+
+/*view more ->> part 1*/
+
+.view-more1{
+    background: #293d31;
+}
+
+.view-more1 h4{
+
+    color:#aab5a0;
+    text-transform: capitalize;
+    font-size:20px;
+    font-family: "Assistant";
+    /*  line-height: 4.5;*/
+    font-weight:200;
+    padding-top:12px;
+    padding-bottom:15px;
+}
+/*end of view more ->> part 1*/
+
+/*--blog ends--*/
+
+/*--team starts--*/
+.ps-team-connect-title{
+    font-family: 'Satisfy', cursive,sans-serif;
+    font-size: 30px;
+    color: #f9ffe1;
+    padding-top: 37px;
+}
+.ps-team-connect-section-title{
+    font-family: 'Arima Madurai', cursive,sans-serif;
+    font-size: 60px;
+    color: #f7dbcb;
+    padding-top: 43px;
+    padding-bottom: 93px;
+}
+.ps-team-connect-social-icon{
+    font-size: 45px;
+    color: #f39d89;
+    padding-bottom: 64px;
+    padding-right: 40px;
+    padding-left: 30px;
+}
+
+/**team**/
+.ps-team-section{
+    background: url("../img/perfume.png") no-repeat;
+    background-size: cover;
+}
+.ps-team-section ul .ps-team-connect-social-icon{
+    font-size: 12px;
+    color: #ffffff;
+    padding-right: 0;
+    padding-left: 0;
+
+}
+.ps-member-wrap{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ps-member-image{
+    border: 3px;
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 50%;
+
+}
+.ps-member-name{
+    font-family: 'Arima Madurai', cursive,sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    padding-bottom: 20px;
+    padding-top: 48px;
+
+}
+.ps-member-description{
+    color: #ffffff;
+    font-family: 'Assistant', sans-serif;
+    padding-bottom: 43px;
+
+}
+.ps-member-border{
+    border-right:4px solid #bf6a53;
+    height: 275px;
+
+}
+/*--team ends--*/
+
+
+/*----Free Consultation----*/
+.ps-consultation {
+    background: url("../img/consultation-bg.png") no-repeat;
+    padding: 60px 0 30px 0;
+}
+.ps-consultation h2{
+    margin: 0;
+}
+.ps-consultation h1{
+    padding: 30px 0 40px 0;
+    margin: 0;
+}
+
+.ps-consultation form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #293d31 !important;
+}
+
+.ps-consultation form textarea::-webkit-input-placeholder{
+    color: #293d31 !important;
+}
+
+.ps-consultation form input[placeholder], textarea[placeholder]{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
+}
+
+.ps-consultation form .form-control {
+    border:none;
+    border-radius:0px;
+}
+
+.ps-consultation form .btn {
+
+    background-color: #293d31;
+    font-family: 'Assistant', sans-serif;
+    font-size: 12px;
+    color:#fff;
+    width:140px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+
+
+.ps-sub-heading {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+}
+
+.ps-heading {
+    font-weight: 200;
+}
+
+.ps-consultation .input-group-addon{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0 0 2px #fff;
+}
+
+/*Free consultation end*/
+
+
+/*--footer starts*/
+/*footer*/
+.ps-footer-bg {
+    background-color: #572d4b;
+}
+
+.ps-footer-row {
+    padding-top: 55px;
+    color: #dcdfc9;
+    font-family: 'Assistant', sans-serif;
+    padding-bottom: 60px;
+}
+
+.ps-footer-logo {
+    top: -13px;
+    padding-left: 35px;
+}
+
+.ps-footer-welcome {
+    padding-left: 52px;
+}
+
+.ps-footer-welcome-heading {
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 200;
+    font-size: 24pt;
+    margin-bottom: 10px;
+    padding-left: 2px;
+}
+
+.ps-footer-welcome-content {
+    font-family: 'Assistant', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    padding-left: 20px;
+    width: 208px;
+
+}
+
+.ps-footer-contact {
+    font-size: 12px;
+    line-height: 20px;
+
+}
+
+.ps-footer-address {
+    line-height: 20px;
+    font-size: 12px;
+
+}
+
+.ps-footer-social {
+    font-size: 10px;
+    line-height: 20px;
+
+}
+
+.ps-footer-li-heading {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.ps-footer-social-icon {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.ps-footer-social-icon li a {
+    color: #dcdfc9;
+}
+
+.ps-footer-social-icon li a:hover, .ps-footer-social-icon li a:active, .ps-footer-social-icon li a:focus {
+    color: #b05797;
+
+}
+
+/*footer media quari*/
+
+/* Back-to-top-functionality */
+
+.go-top {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 30px;
+    position: fixed;
+    bottom: -40px;
+    right: 90px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    background-color: #b05797;
+    color: #e8add7;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 200;
+}
+
+.go-top.show {
+    bottom: 20px;
+}
+
+.go-top:hover {
+    background-color: #5DBA9D;
+    color: #FFFFFF;
+}
+
+/*--footer ends--*/
+
+
+
+

@@ -1,0 +1,1119 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Theme Style*/
+
+/**Section Planning
+*
+*
+**/
+
+/*navbar style starts*/
+/*Header Top*/
+.navbar {
+    margin-bottom: 0px;
+}
+
+.header-top, .header-top a {
+    background: #4b2641;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #7d406c;
+    text-decoration: none;
+}
+
+.nav-background {
+    background: #7d406c;
+    border: none;
+}
+
+.logo-top {
+    margin-top: 3px;
+    z-index: 2;
+    position: relative;
+    padding: 0 0 0 25px;
+
+}
+
+.main-nav-wrapper ul li {
+    padding: 10px 10px 1px 20px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a {
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 3px solid transparent;
+    transition: all 500ms;
+    line-height: 25px;
+    color: #d5cec2;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active {
+    color: #f39d89;
+    background: transparent !important;
+    border-bottom: 3px solid #fff;
+}
+
+.submenu .dropdown-menu {
+    min-width: 132px;
+    background: #69365b;
+}
+
+.submenu .dropdown-menu li a {
+    background: transparent;
+
+}
+
+.submenu ul > li > a:hover,
+.submenu ul > li > a:focus {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.submenu ul li a {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 500;
+    color: #f39d89;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.dropdown-large ul li {
+    font-family: 'Heebo', sans-serif;
+
+}
+
+.dropdown-large {
+    position: static !important;
+}
+
+.dropdown-menu-large {
+    background: #69365b;
+    width: 71%;
+    margin-left: 254px;
+    margin-right: 36px;
+    padding: 30px 10px 20px 0;
+}
+
+.dropdown-menu-large > li > ul > li {
+    padding: 3px;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+.dropdown-title {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 500;
+    color: #f39d89;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.dropdown-menu-large > li > ul > li > a {
+    display: block;
+    padding: 3px 3px 3px 0;
+    clear: both;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.428571429;
+    color: #f39d89;
+    white-space: normal;
+    text-transform: uppercase;
+}
+
+.drop-image-title > a {
+    color: #f39d89;
+    text-decoration: none;
+}
+
+.drop-image-title {
+    background: #3e2036;
+    margin-bottom: 4px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #f39d89;
+    text-transform: uppercase;
+}
+
+.dropdown-menu-large > li ul > li > a:hover,
+.dropdown-menu-large > li ul > li > a:focus {
+    text-decoration: none;
+    color: #fff;
+
+}
+.dropdown-image{
+    padding-top: 7px;
+}
+
+.drop-image-title a:hover {
+    color: #fff;
+}
+
+.dropdown-menu-large .col1{
+    padding-left: 45px;
+}
+
+.dropdown-menu-large .col2{
+    padding-left: 105px;
+}
+
+@media (max-width: 768px) {
+    .dropdown-menu-large {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .dropdown-menu-large > li {
+        margin-bottom: 30px;
+    }
+
+    .dropdown-menu-large > li:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+/*Override Bootstrap Default Style*/
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;
+    }
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    color: #f39d89;
+    background: transparent !important;
+    border-bottom: 3px solid #fff;
+}
+
+/*navbar ends===============================*/
+/*slider starts ============================*/
+
+/*indicator*/
+
+/*Global Class*/
+.container {
+    max-width: 1110px;
+}
+
+.ps-creative-title {
+    font-family: 'Lobster Two', cursive;
+    font-size: 45px;
+    line-height: 100px;
+}
+
+.border-bottom-none, .border-bottom-none:hover {
+    border-bottom: none !important;
+}
+
+.ps-hr {
+    display: inline-block;
+    height: 2px;
+    width: 100px;
+    margin: 14px;
+    background: #fff;
+}
+
+.ps-slider-wrap {
+    padding: 100px 0;
+}
+
+.carousel-inner {
+    display: block;
+    z-index: 2;
+}
+
+.ps-slider-header {
+    color: #fff;
+}
+
+.ps-slider-title {
+    font-size: 120px;
+    font-family: 'Arima Madurai', cursive;
+}
+
+/*indicator*/
+
+.carousel-indicators li.active {
+    background: white;
+    color: white;
+    border: 8px solid white;
+}
+
+.carousel-indicators li {
+    background-color: #fff;
+}
+
+.ps-indicator-position {
+    bottom: -80px;
+
+}
+
+/*//end-Global*/
+
+/*header-image(small)*/
+
+#spa-small-slider {
+    padding: 50px 0px;
+}
+
+/*<!--07 - Shop Home Left Sidebar-->*/
+
+.ps-lsidebar-slider {
+    position: relative;
+    background: url("../img/shop-home-left.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.ps-lsidebar-slider:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cbcec8+0,ddddd7+0,bac0c4+0,615a57+100 */
+    background: rgb(203, 206, 200); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cbcec8', endColorstr='#615a57', GradientType=0); /* IE6-9 */
+}
+
+/*<!--//07 - Shop Home Left Sidebar-->*/
+/*<!--08 - Shop Home Left Sidebar Alternate-->*/
+.ps-lsidebar-alter-slider {
+    position: relative;
+    background: url("../img/slider.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.ps-lsidebar-alter-slider:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cbcec8+0,ddddd7+0,bac0c4+0,615a57+100 */
+    background: rgb(203, 206, 200); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cbcec8', endColorstr='#615a57', GradientType=0); /* IE6-9 */
+}
+
+/*<!--//08 - Shop Home Left Sidebar Alternate-->*/
+/*<!--09 - Shop Home Right Sidebar-->*/
+.ps-rsidebar-slider {
+    position: relative;
+    background: url("../img/shop-home-right.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.ps-rsidebar-slider:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cbcec8+0,ddddd7+0,bac0c4+0,615a57+100 */
+    background: rgb(203, 206, 200); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cbcec8', endColorstr='#615a57', GradientType=0); /* IE6-9 */
+}
+
+/*<!--//09 - Shop Home Right Sidebar-->*/
+/*<!--10 - Shop Home Right Sidebar Alternate-->*/
+.ps-rsidebar-alter-slider {
+    position: relative;
+    background: url("../img/shop-home-right-alter.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.ps-rsidebar-alter-slider:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cbcec8+0,ddddd7+0,bac0c4+0,615a57+100 */
+    background: rgb(203, 206, 200); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cbcec8', endColorstr='#615a57', GradientType=0); /* IE6-9 */
+}
+
+/*<!--//10 - Shop Home Right Sidebar Alternate-->*/
+/*<!--11 - Shop Home No Sidebar-->*/
+.ps-no-sidebar-slider {
+    position: relative;
+    background: url("../img/shop-home-no-sidebar.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.ps-no-sidebar-slider:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cbcec8+0,ddddd7+0,bac0c4+0,615a57+100 */
+    background: rgb(203, 206, 200); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cbcec8', endColorstr='#615a57', GradientType=0); /* IE6-9 */
+}
+
+/*<!--//11 - Shop Home No Sidebar-->*/
+
+/*<!--12 - Shop Home No Sidebar Alternate-->*/
+.ps-nosidebar-alter-slider {
+    position: relative;
+    background: url("../img/shop-home-nosidebar-alter.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.ps-nosidebar-alter-slider:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cbcec8+0,ddddd7+0,bac0c4+0,615a57+100 */
+    background: rgb(203, 206, 200); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(203, 206, 200, 1) 0%, rgba(221, 221, 215, 1) 0%, rgba(186, 192, 196, 1) 0%, rgba(97, 90, 87, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cbcec8', endColorstr='#615a57', GradientType=0); /* IE6-9 */
+}
+
+/*<!--//12 - Shop Home No Sidebar Alternate-->*/
+/*slider ends =============================*/
+
+/*Body*/
+.container {
+    max-width: 1110px;
+}
+
+body {
+
+    font-family: 'Assistant', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Assistant', sans-serif;
+}
+
+/* minaxami */
+/* ----------------------------------- shop page --------------------------- */
+
+.ps-shop {
+    margin-top: 50px;
+}
+
+.ps-shop-top {
+    margin-top: 50px;
+}
+
+/* ----------------------------------- shop heading starts --------------------------- */
+.ps-shop-heading h4 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    color: #293d31;
+    float: left;
+    margin-right: 10px;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+.ps-shop-heading-show {
+    margin-left: 20px;
+}
+
+.ps-shop-heading-show li {
+    float: left;
+    margin-right: 15px;
+}
+
+.ps-shop-heading-show h4 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    color: #293d31;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+.ps-shop-heading-show-1 li {
+    float: left;
+    margin-right: 15px;
+}
+
+.ps-shop-heading-show-1 h4 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    color: #293d31;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+.ps-shop-heading-view {
+    padding-left: 36px;
+}
+
+.ps-shop-heading-view h4 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    color: #293d31;
+    float: left;
+    margin-right: 10px;
+    margin-top: 0px;
+    font-weight: 600;
+}
+
+#dropdownMenu1 {
+    width: 85px;
+    height: 28px;
+}
+
+#dropdownMenu2 {
+    width: 28px;
+    height: 28px;
+}
+
+#dropdownMenu3 {
+    width: 140px;
+    height: 30px;
+}
+
+.btn {
+    font-family: 'Assistant', sans-serif;
+    display: inline-block;
+    padding: 0px;
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.btn .caret {
+    margin-left: 25px;
+}
+
+.btn1 {
+    color: #333;
+    background-color: #ebf1d7;
+}
+
+.btn2 {
+    color: #333;
+    background-color: #bdcbb9;
+}
+
+.btn4 {
+    color: #fff;
+    background-color: #7d406c;
+}
+
+/* ----------------------------------- shop heading end --------------------------- */
+
+/* ----------------------------------- shop image starts --------------------------- */
+
+.ps-shopping-margin-top {
+    margin-top: 50px;
+}
+
+/* -- shop product starts -- */
+.ps-product {
+    margin-top: 15px;
+}
+
+/* -- shop product end -- */
+
+/* -- shop product-name starts -- */
+.ps-product-name h5 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    color: #45574a;
+    padding-bottom: 12px;
+}
+
+/* -- shop product-name end -- */
+
+/* -- shop product-price starts -- */
+.ps-product-price {
+    color: #374a3e;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+.ps-doller-top {
+    vertical-align: text-top;
+}
+
+.ps-product-price-center {
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+/* -- shop product-price end -- */
+
+/* -- shop cart starts -- */
+
+.ps-shop-cart {
+    margin-top: 30px;
+}
+
+.ps-shop-cart li {
+    float: left;
+}
+
+.cart-left {
+    margin-left: 5px;
+}
+
+.cart-share {
+    padding-top: 8px;
+    margin-left: 15px;
+}
+
+.cart-heart {
+    padding-top: 8px;
+    padding-left: 20px;
+}
+
+.ps-custom-link-style {
+    color: #000;
+    text-decoration: none;
+}
+
+.ps-custom-link-style:hover, .ps-custom-link-style:focus {
+    color: #000;
+    text-decoration: none;
+
+}
+
+.change-icon > .fa + .fa,
+.change-icon:hover > .fa, .change-icon:active > .fa {
+    display: none;
+}
+
+.change-icon:hover > .fa + .fa, .change-icon:active > .fa + .fa {
+    display: inherit;
+}
+
+/* -- shop cart end -- */
+
+span {
+    font-weight: bold;
+}
+
+del {
+    color: #758375;
+}
+
+/* -- shop pagination starts -- */
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    border-radius: 4px;
+    margin-top: 95px;
+    border-top: 1px solid #ebf1d7;
+    border-right: 1px solid #ebf1d7;
+    border-bottom: 1px solid #ebf1d7;
+    border-left: 1px solid #ebf1d7;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    color: #293d31;
+    position: relative;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    border: 1px solid #ebf1d7;
+    background-color: #ebf1d7;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    color: #293d31;
+    cursor: default;
+    background-color: #bdcbb9;
+    height: 38px;
+    border: none;
+    font-weight: bold;
+}
+
+.pagination > .disabled > a,
+.pagination > .disabled > a:focus,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > span,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > span:hover {
+    color: #777;
+    border-color: #ebf1d7;
+    cursor: not-allowed;
+    background-color: #ebf1d7;
+}
+
+/* -- shop pagination end -- */
+
+/*left sidebar-Mannan*/
+.ps-sidebar-headings {
+    font-size: 20px;
+    font-family: "Assistant";
+    color: rgb(41, 61, 49);
+    font-weight: bold;
+}
+
+ul.ps-sidebar-list-style {
+    padding: 0;
+    list-style-type: none;
+}
+
+.ps-sidebar-links {
+    font-size: 18px;
+    font-family: "Assistant";
+    color: rgb(41, 61, 49);
+}
+
+.ps-sidebar-links:hover, .ps-sidebar-links:active, .ps-sidebar-links:focus {
+    text-decoration: none;
+}
+
+.ps-sidebar-borders-paddings {
+    border-bottom: 1px solid rgb(189, 203, 185);
+    padding-bottom: 20px;
+    padding-top: 22px;
+}
+
+.ps-sidebar-left-padding {
+    padding-left: 18px;
+}
+
+.ps-sidebar-first-bottom {
+    min-height: 84px;
+}
+
+.ps-sidebar-filter-bottom {
+    margin-bottom: 46px;
+}
+
+.ps-sidebar-price-bottom {
+    margin-bottom: 92px;
+}
+
+.ps-sidebar-scent-top {
+    padding-top: 54px;
+}
+
+.ps-sidebar-cat {
+    padding-top: 5px;
+}
+
+.slider-selection {
+    position: absolute;
+    background-image: -webkit-linear-gradient(top, #f9f9f9 0, #f5f5f5 100%);
+    background-image: -o-linear-gradient(top, #f9f9f9 0, #f5f5f5 100%);
+    background-image: linear-gradient(to bottom, #000000 0, #000000 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#fff5f5f5', GradientType=0);
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.slider-handle {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    background-image: -webkit-linear-gradient(top, #000000 0, #000000 100%);
+    background-image: -o-linear-gradient(top, #000000 0, #000000 100%);
+    background-image: linear-gradient(to bottom, #040404 0, #000000 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff149bdf', endColorstr='#ff0480be', GradientType=0);
+    filter: none;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
+    border: 0 solid transparent;
+}
+
+.slider.slider-horizontal {
+    width: 100%;
+}
+
+/*general styles for all CSS Checkboxes*/
+label {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type=checkbox].css-checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left: 20px;
+    height: 15px;
+    display: inline-block;
+    line-height: 15px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -15px;
+}
+
+.css-label {
+    background-image: url(../img/icons/vlad.png);
+}
+
+/*specific classes related to Checkbox skins*/
+.vlad {
+    background-image: url(../img/icons/vlad.png);
+}
+
+input[type=checkbox].css-checkbox.lrg + label.css-label.lrg {
+    padding-left: 22px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=checkbox].css-checkbox.lrg:checked + label.css-label.lrg {
+
+    background-position: 0 -20px;
+}
+
+/*left sidebar ends============================================================*/
+
+/*footer starts=================================================================*/
+/*footer*/
+.ps-footer-bg {
+    background-color: #572d4b;
+}
+
+.ps-footer-row {
+    padding-top: 55px;
+    color: #dcdfc9;
+    font-family: 'Assistant', sans-serif;
+    padding-bottom: 60px;
+}
+
+.ps-footer-logo {
+    top: -13px;
+    padding-left: 35px;
+}
+
+.ps-footer-welcome {
+    padding-left: 52px;
+}
+
+.ps-footer-welcome-heading {
+    font-family: 'Arima Madurai', cursive;
+    font-weight: 200;
+    font-size: 24pt;
+    margin-bottom: 10px;
+    padding-left: 2px;
+}
+
+.ps-footer-welcome-content {
+    font-family: 'Assistant', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    padding-left: 20px;
+    width: 208px;
+
+}
+
+.ps-footer-contact {
+    font-size: 12px;
+    line-height: 20px;
+
+}
+
+.ps-footer-address {
+    line-height: 20px;
+    font-size: 12px;
+
+}
+
+.ps-footer-social {
+    font-size: 10px;
+    line-height: 20px;
+
+}
+
+.ps-footer-li-heading {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.ps-footer-social-icon {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.ps-footer-social-icon li a {
+    color: #dcdfc9;
+}
+
+.ps-footer-social-icon li a:hover, .ps-footer-social-icon li a:active, .ps-footer-social-icon li a:focus {
+    color: #b05797;
+
+}
+
+/*footer media quari*/
+
+/* Back-to-top-functionality */
+
+.go-top {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 30px;
+    position: fixed;
+    bottom: -40px;
+    right: 90px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    background-color: #b05797;
+    color: #e8add7;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.go-top.show {
+    bottom: 20px;
+}
+
+.go-top:hover {
+    background-color: #5DBA9D;
+    color: #FFFFFF;
+}
+
+/*footer ends ==================================================================*/
